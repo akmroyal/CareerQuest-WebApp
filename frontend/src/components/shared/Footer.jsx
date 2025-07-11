@@ -52,7 +52,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <Briefcase className="h-6 w-6 text-[#6A38C2]" />
-              <h2 className="text-xl font-bold">Job Quest</h2>
+              <h2 className="text-xl font-bold">Career Quest</h2>
             </div>
             <p className="text-gray-600 text-sm leading-relaxed">
               Connecting talented professionals with their dream careers. Your journey to success starts here.
@@ -126,7 +126,7 @@ const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-600 text-sm">
-            © {new Date().getFullYear()} Job Quest. All rights reserved.
+            © {new Date().getFullYear()} Career Quest. All rights reserved.
           </p>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-gray-600 hover:text-[#6A38C2] transition-colors duration-200">

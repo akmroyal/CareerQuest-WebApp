@@ -39,7 +39,7 @@ const Navbar = () => {
         <div className="relative group">
           <Link to="/">
             <h1 className="text-2xl sm:text-3xl font-bold cursor-pointer tracking-tight">
-              Job
+              Career
               <span className="bg-gradient-to-r from-[#f83002] to-[#ff6b4d] bg-clip-text text-transparent">
                 Quest
               </span>
