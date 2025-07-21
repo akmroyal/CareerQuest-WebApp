@@ -27,7 +27,7 @@ const PostJob = () => {
     location: "",
     jobType: "",
     experience: "",
-    position: 0,
+    position: "",
     companyId: "",
   });
   const [loading, setLoading] = useState(false);
@@ -50,7 +50,16 @@ const PostJob = () => {
     e.preventDefault();
     try {
       setLoading(true);
-      const res = await axios.post(`${JOB_API_END_POINT}/post`, input, {
+      
+      // Convert string inputs to numbers for backend compatibility
+      const jobData = {
+        ...input,
+        salary: parseInt(input.salary),
+        experience: parseInt(input.experience),
+        position: parseInt(input.position)
+      };
+      
+      const res = await axios.post(`${JOB_API_END_POINT}/post`, jobData, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -169,14 +178,14 @@ const PostJob = () => {
 
               {/* Salary */}
               <div className="space-y-2">
-                <Label className="text-gray-700">Salary Range</Label>
+                <Label className="text-gray-700">Salary (Annual)</Label>
                 <Input
-                  type="text"
+                  type="number"
                   name="salary"
                   value={input.salary}
                   onChange={changeEventHandler}
                   className="h-11 border-gray-200 focus:border-[#6A38C2] focus:ring-[#6A38C2]"
-                  placeholder="e.g., $80,000 - $100,000"
+                  placeholder="e.g., 80000"
                 />
               </div>
 
@@ -208,14 +217,14 @@ const PostJob = () => {
 
               {/* Experience Level */}
               <div className="space-y-2">
-                <Label className="text-gray-700">Experience Level</Label>
+                <Label className="text-gray-700">Experience Level (Years)</Label>
                 <Input
-                  type="text"
+                  type="number"
                   name="experience"
                   value={input.experience}
                   onChange={changeEventHandler}
                   className="h-11 border-gray-200 focus:border-[#6A38C2] focus:ring-[#6A38C2]"
-                  placeholder="e.g., 3+ years"
+                  placeholder="e.g., 3"
                 />
               </div>
 
