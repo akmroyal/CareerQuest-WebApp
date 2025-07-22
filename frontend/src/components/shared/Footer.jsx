@@ -19,8 +19,8 @@ const Footer = () => {
 
   const contact = [
     { icon: Mail, text: 'support@jobquest.com' },
-    { icon: Phone, text: '+91 9818084104' },
-    { icon: MapPin, text: 'New Delhi, IND, 110052' },
+    { icon: Phone, text: '+91 9XXXXXXXX4' },
+    { icon: MapPin, text: 'Greater Noida, IND, 201310' },
   ];
 
   return (
