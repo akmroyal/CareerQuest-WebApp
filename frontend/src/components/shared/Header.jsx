@@ -9,7 +9,7 @@ const Header = () => {
         <div className="relative group">
           <Link to="/">
             <h1 className="text-2xl sm:text-3xl font-bold cursor-pointer tracking-tight">
-              Job<span className="bg-gradient-to-r from-[#f83002] to-[#ff6b4d] bg-clip-text text-transparent">Quest</span>
+              Career<span className="bg-gradient-to-r from-[#f83002] to-[#ff6b4d] bg-clip-text text-transparent">Quest</span>
             </h1>
           </Link>
           <div className="absolute -bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#f83002] to-[#ff6b4d] transition-all duration-300 group-hover:w-full"></div>

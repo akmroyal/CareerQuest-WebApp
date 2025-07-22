@@ -98,7 +98,7 @@ const Signup = () => {
                 value={input.fullname}
                 name="fullname"
                 onChange={changeEventHandler}
-                placeholder="John Doe"
+                placeholder="Akm royal"
                 className="h-11 transition-all duration-200 focus:ring-2 focus:ring-blue-500"
               />
             </div>
@@ -110,7 +110,7 @@ const Signup = () => {
                 value={input.email}
                 name="email"
                 onChange={changeEventHandler}
-                placeholder="john.doe@example.com"
+                placeholder="akm.royal@example.com"
                 className="h-11 transition-all duration-200 focus:ring-2 focus:ring-blue-500"
               />
             </div>
